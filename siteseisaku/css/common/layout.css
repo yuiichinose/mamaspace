@@ -1,0 +1,230 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	デフォルトスタイル
+------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+
+	font-size: 1em;
+}
+
+
+
+body,
+table,
+input, textarea, select, option {
+	font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+}
+
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+img {
+	vertical-align: top;
+}
+
+img2 {
+	border-radius: 50%;
+}
+
+a,
+a:link {
+	color: #737373;
+	text-decoration: none;
+}
+
+a:visited {
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+}
+
+/*------------------------------------------------------------
+	レイアウト
+------------------------------------------------------------*/
+body {
+	min-width: 1100px;
+	color: #737373;
+	font-size: 18px;
+	line-height: 1.5;
+	background-color: #f3fcff;
+	-webkit-text-size-adjust: none;
+}
+
+#container {
+	margin: 0 auto;
+	width: 1024px;
+	text-align: left;
+}
+
+#main {
+	padding-bottom: 33px;
+	background-color: #fff;
+}
+
+
+
+a[href^="tel:"] {
+	cursor: default;
+	pointer-events: none;
+}
+
+
+/*------------------------------------------------------------
+	ヘッダー
+------------------------------------------------------------*/
+#gHeader .h1Box {
+	margin-bottom: 14px;
+	background-color: #797674;
+	border-bottom: 1px solid #f5f5f7;
+}
+
+
+/*------------------------------------------------------------
+	gNavi
+------------------------------------------------------------*/
+#gNavi {
+	margin: 0 auto 22px;
+	width: 1000px;
+}
+
+#gNavi ul li {
+	width: 111px;
+	float: left;
+	font-size: 14px;
+}
+
+
+
+/*------------------------------------------------------------
+	フッター
+------------------------------------------------------------*/
+#gFooter {
+	text-align: center;
+	padding: 22px 50px 12px;
+	background-color: #FFFBE1;
+}
+
+#gFooter .fLogo {
+	margin-bottom: 14px;
+}
+
+.sp {
+	display: none !important;
+}
+
+
+
+@media screen and (max-width: 767px) {
+	body {
+		min-width: inherit;
+		font-size: 13px;
+	}
+	
+	a:hover,
+	a:hover img {
+		filter: alpha(opacity=100) !important;
+		opacity: 1 !important;
+	}
+
+	.pc {
+		display: none !important;
+	}
+
+	.sp {
+		display: block !important;
+	}
+
+	a[href^="tel:"] {
+		cursor: pointer;
+		pointer-events: auto;
+	}
+
+	#container {
+		margin: 0 auto;
+		width: auto;
+	}
+	
+	#main {
+		padding-bottom: 12px;
+	}
+	
+	/*------------------------------------------------------------
+		ヘッダー
+	------------------------------------------------------------*/
+	#gHeader .h1Box {
+		margin-bottom: 9px;
+	}
+	
+	/*------------------------------------------------------------
+		gNavi
+	------------------------------------------------------------*/
+	#gNavi {
+		width: auto;
+	}
+	
+	#gNavi ul li {
+		width: 25%;
+		font-size: 12px;
+	}
+	
+	/*------------------------------------------------------------
+		フッター
+	------------------------------------------------------------*/
+	#gFooter {
+		padding: 20px 50px 12px;
+	}
+	
+	#gFooter .fLogo {
+		margin-bottom: 10px;
+	}
+	
+	#gFooter .fLogo img {
+		width: 130px; 
+	}
+	
+	#gFooter p img {
+		width: 240px; 
+	}
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px)  {
+}
